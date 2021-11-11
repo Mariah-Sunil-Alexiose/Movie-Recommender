@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% block content %}
+<br>
+<form method="POST"> 
+    <div class="px-5 row">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Movie" name="movie" id="movie">
+        </div>
+    </div>
+    <br>
+    <div class="px-5 mx-auto">    
+        <button type="submit" class="btn btn-primary">Recommend</button>
+    </div>
+    </form>
+{% endblock %}

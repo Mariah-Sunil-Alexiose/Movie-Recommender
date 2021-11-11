@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="dflex justify-content-center">
+    <h3 class="text-primary">Movies suggested for you:</h3>
+    <p>
+        {% for key, value in movies.items() %}   
+            <ul>{{ key }}. {{ value }}</ul>
+        {% endfor %}
+    </p>
+</div>
+{% endblock %}
